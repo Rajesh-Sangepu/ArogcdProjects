@@ -7,11 +7,11 @@ spec:
     - list:
         elements:
           - name: nginx-deployment
-            repoURL: https://github.com/OpsMx/argo-training.git          #deployment
+            repoURL: https://github.com/Rajesh-Sangepu/ArogcdProjects.git         #deployment
             targetRevision: HEAD
             path: Rajesh/Applicationsetfiles/app1
           - name: nginx-service
-            repoURL: https://github.com/OpsMx/argo-training.git           #service
+            repoURL: https://github.com/Rajesh-Sangepu/ArogcdProjects.git          #service
             targetRevision: HEAD
             path: Rajesh/Applicationsetfiles/app2
   template:
