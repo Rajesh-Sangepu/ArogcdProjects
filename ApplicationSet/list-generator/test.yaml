@@ -9,11 +9,11 @@ spec:
           - name: nginx-deployment
             repoURL: https://github.com/Rajesh-Sangepu/ArogcdProjects.git         #deployment
             targetRevision: HEAD
-            path: Rajesh/Applicationsetfiles/app1
+            path: ApplicationSet/Applicationsetfiles/app1
           - name: nginx-service
             repoURL: https://github.com/Rajesh-Sangepu/ArogcdProjects.git          #service
             targetRevision: HEAD
-            path: Rajesh/Applicationsetfiles/app2
+            path: ApplicationSet/Applicationsetfiles/app2
   template:
     metadata:
       name: "{{ .name }}-app"
