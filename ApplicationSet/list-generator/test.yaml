@@ -2,6 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
   name: list-appset
+  namespace: argocd
 spec:
   generators:
     - list:
@@ -16,7 +17,7 @@ spec:
             path: ApplicationSet/Applicationsetfiles/app2
   template:
     metadata:
-      name: "{{ .name }}-app"
+      name: "{{name}}-app"
     spec:
       project: default
       source:
@@ -25,8 +26,10 @@ spec:
         path: '{{path}}'
       destination:
         server: https://kubernetes.default.svc
-        namespace: "{{ .namespace }}"
+        namespace: "{{name}}-app"
       syncPolicy:
         automated:
           prune: true
           selfHeal: true
+        syncOptions:
+        - CreateNamespace=true
