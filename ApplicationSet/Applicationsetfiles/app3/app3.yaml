@@ -8,8 +8,8 @@ spec:
 
   source:
     repoURL: https://github.com/Rajesh-Sangepu/ArogcdProjects.git
-    targetRevision: main
-    path: manifests
+    targetRevision: Head
+    path: ApplicationSet/Applicationsetfiles/app3
 
   destination:
     server: https://kubernetes.default.svc
