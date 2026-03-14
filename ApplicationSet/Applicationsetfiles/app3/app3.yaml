@@ -8,7 +8,7 @@ spec:
 
   source:
     repoURL: https://github.com/Rajesh-Sangepu/ArogcdProjects.git
-    targetRevision: Head
+    targetRevision: HEAD
     path: ApplicationSet/Applicationsetfiles/app3
 
   destination:
